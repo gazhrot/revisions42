@@ -6,7 +6,7 @@
 /*   By: abruneau <abruneau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/30 15:05:26 by abruneau          #+#    #+#             */
-/*   Updated: 2015/07/30 19:47:20 by abruneau         ###   ########.fr       */
+/*   Updated: 2015/07/31 11:03:59 by abruneau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		ft_atoi(const char *str)
 	int tab[11];
 
 	i = 0;
-	power = 0;
+	power = 1;
 	while (str[i] != '\0')
 	{
 		tab[i] = (str[i] - 48);
@@ -42,5 +42,6 @@ int		main(void)
 	const char *str;
 	
 	str = "1234";
-	printf("%d", ft_atoi(str));
+	printf("l'atoi de la machine : %d\n", atoi(str));
+	printf("mon atoi : %d\n", ft_atoi(str));
 }
